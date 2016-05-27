@@ -8,7 +8,7 @@ class CoursesController < ApplicationController
   #   @courses = Course.all
   # end
   def index
-    @courses = if params[:q].present?
+    @courses = if params[:q].present?|| params[:search] && (params[:search][:title].present?|| params[:search][:category].present?)
       ElasticSearcher.new.call(params).courses
     else
       Course.all
