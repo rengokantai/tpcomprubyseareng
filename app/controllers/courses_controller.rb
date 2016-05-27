@@ -1,3 +1,4 @@
+#require 'ElasticSearcher'
 class CoursesController < ApplicationController
   before_action :set_course, only: [:show, :edit, :update, :destroy]
 
@@ -8,7 +9,7 @@ class CoursesController < ApplicationController
   # end
   def index
     @courses = if params[:q].present?
-      Course.search(params[:q]).records
+      ElasticSearcher.new.call(params).courses
     else
       Course.all
     end

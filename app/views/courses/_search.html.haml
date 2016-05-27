@@ -2,3 +2,9 @@
     %p
         =text_field_tag :q, "",placeholder: "Search query"
         =button_tag "search"
+    %filedset
+        %legend Advanced
+        %p
+            =text_field_tag "search[title]", "",class:"form-control",placeholder:"Title"
+        %p
+            =text_field_tag "search[category]", "",class:"form-control",placeholder:"Category"
