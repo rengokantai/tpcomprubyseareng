@@ -1,4 +1,8 @@
+require 'elasticsearch/model'
+
 class Course < ActiveRecord::Base
-    include ElasticSearch::Model
-    include ElasticSearch::Model::Callbacks
+    include Elasticsearch::Model
+    include Elasticsearch::Model::Callbacks
 end
+
+Course.__elasticsearch__.create_index!
