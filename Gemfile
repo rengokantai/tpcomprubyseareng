@@ -27,6 +27,8 @@ gem 'bootstrap-sass'
 gem 'pry-rails'
 gem 'pry-byebug'
 gem 'puma'
+gem 'elasticsearch-model'
+gem 'elasticsearch-rails'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
