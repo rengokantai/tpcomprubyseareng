@@ -29,7 +29,8 @@ gem 'pry-byebug'
 gem 'puma'
 gem 'elasticsearch-model'
 gem 'elasticsearch-rails'
-
+gem 'kaminari'
+gem 'bootstrap-kaminari-views'
 #2-5
 gem 'bootstrap-datepicker-rails'
 # Use ActiveModel has_secure_password
