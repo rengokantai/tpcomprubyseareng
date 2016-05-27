@@ -3,8 +3,15 @@ class CoursesController < ApplicationController
 
   # GET /courses
   # GET /courses.json
+  # def index
+  #   @courses = Course.all
+  # end
   def index
-    @courses = Course.all
+    @courses = if params[:q].present?
+      Course.search(params[:q]).records
+    else
+      Course.all
+    end
   end
 
   # GET /courses/1
