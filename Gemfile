@@ -27,10 +27,10 @@ gem 'bootstrap-sass'
 gem 'pry-rails'
 gem 'pry-byebug'
 gem 'puma'
-gem 'elasticsearch-model'
-gem 'elasticsearch-rails'
 gem 'kaminari'
 gem 'bootstrap-kaminari-views'
+gem 'elasticsearch-model'
+gem 'elasticsearch-rails'
 #2-5
 gem 'bootstrap-datepicker-rails'
 # Use ActiveModel has_secure_password
