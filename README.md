@@ -57,3 +57,11 @@ rake -T
 ```
 rake environment elasticsearch:import:all
 ```
+#####7
+add
+```
+gem 'bootstrap-datepicker-rails'
+gem 'quiet-assets'
+gem 'kaminari'
+gem 'bootstrap-kaminari-views'
+```
